@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: netty-start
+
+server:
+    host: localhost
+    port: 9000
+    netty:
+        boss-count: 1
+        worker-count: 4
+        keep-alive: true
+        backlog: 128
