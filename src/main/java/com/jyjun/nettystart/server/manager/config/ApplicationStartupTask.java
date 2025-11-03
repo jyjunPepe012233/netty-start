@@ -1,6 +1,6 @@
-package com.jyjun.nettystart.server.config;
+package com.jyjun.nettystart.server.manager.config;
 
-import com.jyjun.nettystart.server.socket.NettyServerSocket;
+import com.jyjun.nettystart.server.manager.socket.NettyServerSocket;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;

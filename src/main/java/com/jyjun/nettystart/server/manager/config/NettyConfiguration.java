@@ -1,6 +1,6 @@
-package com.jyjun.nettystart.server.config;
+package com.jyjun.nettystart.server.manager.config;
 
-import com.jyjun.nettystart.server.socket.NettyChannelInitializer;
+import com.jyjun.nettystart.server.manager.socket.NettyChannelInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -46,8 +46,8 @@ public class NettyConfiguration {
                 .handler(new LoggingHandler(LogLevel.DEBUG))
                 .childHandler(nettyChannelInitializer);
 
-        bootstrap.option(ChannelOption.SO_KEEPALIVE, keepAlive);
         bootstrap.option(ChannelOption.SO_BACKLOG, backlog);
+        bootstrap.option(ChannelOption.SO_KEEPALIVE, keepAlive);
 
         return bootstrap;
     }

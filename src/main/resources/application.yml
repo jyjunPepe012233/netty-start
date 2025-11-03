@@ -10,3 +10,7 @@ server:
         worker-count: 4
         keep-alive: true
         backlog: 128
+
+network:
+    protocol:
+        magic: 0x3D3D
